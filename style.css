@@ -1,0 +1,230 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+@media screen and (min-width: 375px) {
+    body{
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 70px;
+        font-family:Arial, Helvetica, sans-serif;
+    }
+    
+    .overlay{
+        background-image: url('Assets/night.jpg');
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+        filter: blur(3px);
+        z-index: -1;
+    }
+    
+    .top{
+        height: 300px;
+        width: 100%;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-weight: 700;
+        color: #fff;
+    }
+    
+    .left{
+        height: 100%;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .search{
+        width: 70%;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .location{
+        width: 80%;
+        height: 90%;
+        border: transparent;
+        outline: none;
+        padding: 5px;
+    }
+
+    .search-btn{
+        height: 30%;
+    }
+    
+    .date{
+        font-size: 0.6rem;
+    }
+
+    .tmp{
+        font-size: 5rem;
+        color: rgb(191, 166, 214);
+        background: linear-gradient(to bottom, white, rgb(221, 187, 253));
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .upper-lower{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 60%;
+        height: 13%;
+        border-radius: 10px;
+        border: 1px solid white;
+        color: #fff;
+    }
+    
+    .description{
+        font-size: 0.8rem;
+    }
+    
+    .right{
+        width: 40%;
+        height: 100%;
+    }
+
+    .middle-info{
+        height: 100px;
+        width: 90%;
+        border: 1px solid #fff;
+        border-radius: 30px;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        font-weight: 700;
+    }
+
+    .info1, .info2, .info3{
+        height: 50%;
+        width: 25%;
+        border-right: 1px solid #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .forecast{
+        width: 100%;
+        height: 600px;
+        background-color: #fff;
+        color: #000;
+        padding: 20px;
+        border-radius: 40px 40px 0px 0px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hour-container {
+        width: 100%;
+        height: 40%;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        overflow-x: auto;
+        gap: 30px;
+    }
+    
+    .item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+        height: 100%;
+        text-align: center;
+        min-width: 80px;
+    }
+    
+    .hour-icon {
+        height: 70px;
+        width: 70px;
+        border-radius: 50%;
+        background-color: rgb(240, 239, 239);
+    }
+
+    .hour{
+        color: grey;
+    }
+
+    .degree{
+        font-weight: 700;
+        font-size: 1.2rem;
+    }
+
+    .tomorrow-forecast{
+        height: 30%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .tomorrow-heading{
+        align-self: start;
+    }
+
+    .info{
+        width: 90%;
+        height: 60%;
+        border: 1px solid rgb(163, 155, 155);
+        border-radius: 20px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .tomorr-icon{
+        height: 70px;
+        width: 70px;
+        border-radius: 50%;
+        text-align: center;
+        background-color: rgb(240, 239, 239);
+    }
+
+    .tomor-pred{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        font-weight: 700;
+    }
+
+    .pred{
+        font-weight: 100;
+        color: gray;
+    }
+
+    .upper-lower-tomorrow{
+        display: flex;
+        gap: 30px;
+    }
+    
+    .copyright{
+        margin-top: 100px;
+        text-align: center;
+        text-decoration: none;
+        font-weight: 700;
+    }
+}
