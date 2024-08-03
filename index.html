@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
     <title>Weathify</title>
@@ -15,97 +15,66 @@
         <div class="left">
             <h1>Weathify</h1>
             <div class="search">
-                <input type="text" name="location" class="location" placeholder="📍Location">
-                <button class="search-btn">▶</button>
+                <input type="text" name="location" class="location" placeholder="📍Location" required>
+                <button type="submit" class="search-btn">Search</button>
             </div>
-            <p class="city"></p>
+            <div class="left-info">
+            </div>
+            <!-- <p class="city"></p>
             <p class="date"></p>
             <p class="tmp"></p>
             <div class="upper-lower">
-                <p class="upper">↑17</p>
-                <p class="lower">↓10</p>
+                <p class="upper"></p>
+                <p class="lower"></p>
             </div>
             <div class="desc-container">
                 <img class="img-desc" src="#" height="40" width="40">
                 <p class="description"></p>
-            </div>
+            </div> -->
         </div>
         <div class="right">
             <p class="conditions"></p>
         </div>
     </div>
     <div class="middle-info">
-        <div class="info1"><img src="Assets/weather-icons/humidity.png" alt="" height="50">40</div>
-        <div class="info1"><img src="Assets/weather-icons/sunny.png" alt="" height="40">40</div><div class="info1"><img src="Assets/weather-icons/rain.png" alt="" height="40">40</div><div class="info1"><img src="Assets/weather-icons/precip.png" alt="" height="40">40</div><div class="info1"><img src="Assets/weather-icons/feelslike.png" alt="" height="40">40</div><div class="info1"><img src="Assets/weather-icons/snow-cloud.png" alt="" height="40">40</div>
+        <!-- <div class="info1"><img src="Assets/weather-icons/feelslike.png" alt="" height="40">Feels-like<span class="feelslike"></span></div>
+        <div class="info1"><img src="Assets/weather-icons/humidity.png" alt="" height="40">Humidity<span class="humidity"></span></div>
+        <div class="info1"><img src="Assets/weather-icons/precip.png" alt="" height="40">Precip<span class="precip"></span></div>
+        <div class="info1"><img src="Assets/weather-icons/snow.png" alt="" height="40">Snow<span class="snow"></span></div>
+        <div class="info1"><img src="Assets/weather-icons/wind.png" alt="" height="40">Windspeed<span class="windspeed"></span></div>
+        <div class="info1"><img src="Assets/weather-icons/winddir.png" alt="" height="40">Wind-dir<span class="winddir"></span></div>
+        <div class="info1"><img src="Assets/weather-icons/pressure.png" alt="" height="40">Pressure<span class="pressure"></span></div>
+        <div class="info1"><img src="Assets/weather-icons/solarenergy.png" alt="" height="40">solarenergy<span class="solarenergy"></span>
+        </div>
+        <div class="info1"><img src="Assets/weather-icons/uv.png" alt="" height="40">Uv-Index<span class="uv"></span></div> -->
     </div>
     <div class="forecast">
         <h1>Forecast</h1>
         <div class="hour-container">
-                <div class="item">
-                    <span class="hour-icon">icon</span>
-                    <div class="hour-degree">
-                        <p class="hour">hour</p>
-                        <p class="degree">degree</p>                        
-                    </div>
+            <!-- <div class="item">
+                <span class="hour-icon">icon</span>
+                <div class="hour-degree">
+                    <p class="hour">hour</p>
+                    <p class="degree">degree</p>
                 </div>
-                <div class="item">
-                    <span class="hour-icon">icon</span>
-                    <div class="hour-degree">
-                        <p class="hour">hour</p>
-                        <p class="degree">degree</p>                        
-                    </div>
-                </div>
-                <div class="item">
-                    <span class="hour-icon">icon</span>
-                    <div class="hour-degree">
-                        <p class="hour">hour</p>
-                        <p class="degree">degree</p>                        
-                    </div>
-                </div>
-                <div class="item">
-                    <span class="hour-icon">icon</span>
-                    <div class="hour-degree">
-                        <p class="hour">hour</p>
-                        <p class="degree">degree</p>                        
-                    </div>
-                </div>
-                <div class="item">
-                    <span class="hour-icon">icon</span>
-                    <div class="hour-degree">
-                        <p class="hour">hour</p>
-                        <p class="degree">degree</p>                        
-                    </div>
-                </div>
-                <div class="item">
-                    <span class="hour-icon">icon</span>
-                    <div class="hour-degree">
-                        <p class="hour">hour</p>
-                        <p class="degree">degree</p>                        
-                    </div>
-                </div>
-                <div class="item">
-                    <span class="hour-icon">icon</span>
-                    <div class="hour-degree">
-                        <p class="hour">hour</p>
-                        <p class="degree">degree</p>                        
-                    </div>
-                </div>
+            </div>-->
         </div>
         <div class="tomorrow-forecast">
-                <h1 class="tomorrow-heading">Tomorrow</h1>
-                <div class="info">
-                    <span class="tomorr-icon">icon</span>
-                    <div class="tomor-pred">
-                        <div class="upper-lower-tomorrow">
+            <h1 class="tomorrow-heading">Tomorrow</h1>
+            <div class="info">
+                <!-- <span class="tomorr-icon"><img src="#" alt=""></span>
+                <div class="tomor-pred">
+                    <div class="upper-lower-tomorrow">
                         <p>Tomorrow</p>
-                            <p class="upper">↑17</p>
-                            <p class="lower">↓10</p>
-                        </div>
-                        <p class="pred">prediction ;SA</p>
+                        <p class="t-upper"></p>
+                        <p class="t-lower"></p>
                     </div>
-                </div>
+                    <p class="pred"></p>
+                </div> -->
+            </div>
         </div>
-        <p class="copyright">made by <img src="Assets/Untitled.png" alt="github" width="15"> <a href="https://github.com/m0h1m3d">Useful</a></p>
+        <p class="copyright">made by <img src="Assets/Untitled.png" alt="github" width="15"> <a
+                href="https://github.com/m0h1m3d">Useful</a></p>
     </div>
 </body>
 
