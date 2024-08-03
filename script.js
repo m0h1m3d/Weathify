@@ -44,6 +44,7 @@ async function getWeather(country) {
     }
 };
 
+userInput.value = 'Madrid';
 getWeather('Madrid');
 searchBtn.addEventListener('click', () => {
     clearContainers();
